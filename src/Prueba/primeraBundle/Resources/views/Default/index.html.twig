@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+{% set asset_path = 'resources/prueba/primeraBundle/' %}
+
+{% block content%}
+<div class="container">
+    <div class="card purple gradiant-blue">
+        <div class="card-content">
+            <h1 class="center">OPCIONES</h1>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input  id="first_name" type="text" class="validate">
+                            <label for="first_name " class="white-text">Ingresa el numero de cuenta</label>
+                            <a id="cargarInformacion"class="waves-effect waves-light btn"><i class="material-icons left">call_made</i>Cargar informacion</a>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+            <h4>Saldo disponible ${{ content['saldoTotal'][0].SaldoTotal }}</h4>
+        </div>
+        <div class="card-tabs ">
+            <ul class="tabs tabs-fixed-width ">
+                <li class="tab "><a class="" href="#movimientos">Historial de movimientos</a></li>
+                <li class="tab"><a class="active" href="#retiro">Retirar</a></li>
+                <li class="tab"><a class="" href="#deposito">Depositar</a></li>
+            </ul>
+        </div>
+        <div class="card-content grey lighten-4">
+            <div id="movimientos">
+                <table class='table striped bordered hover' id="historyOfMoves">
+                    <thead>
+                    <tr>
+                        <th>Folio</th>
+                        <th>Numero de cuenta</th>
+                        <th>Importe</th>
+                        <th>Fecha</th>
+                        <th>Tipo</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% if  saldo['movements'] == null %}
+
+                    {% else %}
+                        {% for mov in saldo['movements'] %}
+                            <tr>
+                                <td>{{ mov.idmovimiento }}</td>
+                                <td>{{ mov.nocuenta }}</td>
+                                <td>{{ mov.importe }}</td>
+                                <td>{{ mov.fecha }}</td>
+                                <td>{{ mov.tipomovimiento }}</td>
+
+                            </tr>
+                        {% endfor %}
+                    {% endif %}
+
+                    </tbody>
+                </table>
+            </div>
+
+            </div>
+            <div id="retiro" class="background-white"><h4>Retira</h4>
+                <div class="row">
+                    <form class="col s12">
+
+                            <div class="input-field col  s12">
+                                <i class="material-icons prefix">attach_money
+                                </i>
+                                <input id="importeRetiro" type="number" class="validate">
+                                <label for="importeRetiro">Importe</label>
+                            </div>
+                        <a id="retirar"class="waves-effect waves-light btn"><i class="material-icons left">call_made</i>Retirar</a>
+
+                    </form>
+                </div>
+
+            </div>
+            <div id="deposito">
+                <div id="retiro" class="background-white"><h4>Depositar</h4>
+                    <div class="row">
+                        <form class="col s12" id="">
+
+                            <div class="input-field col  s12">
+                                <i class="material-icons prefix">attach_money
+                                </i>
+                                <input id="importeAbono" type="number" class="validate">
+                                <label for="importeAbono">Importe</label>
+                            </div>
+                            <a id="depositar" class="waves-effect waves-light btn"><i class="material-icons left">call_received</i>DEPOSITAR</a>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{%endblock%}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset(asset_path ~ 'js/primeraBundle.js') }}"></script>
+    <script>
+        var url_getMovimientos= "{{ path('getMovimientos') }}"
+        var url_doAbono= "{{ path('doAbono') }}"
+        var url_doRetiro= "{{ path('doRetiro') }}"
+
+    </script>
+
+
+{% endblock %}
+
+

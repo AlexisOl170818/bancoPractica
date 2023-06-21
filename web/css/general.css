@@ -1,0 +1,26 @@
+.gradiant-blue
+{
+    background: rgb(197,202,233);
+    background: linear-gradient(180deg, rgba(197,202,233,1) 0%, rgba(197,202,233,1) 23%, rgba(43,100,110,1) 100%);
+    color:white;
+}
+.gradiant-head
+{
+
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(86,84,106,1) 23%, rgba(0,212,255,1) 100%);
+}
+
+.background-white
+{
+    background: white;
+    color: black;
+}
+.background-black
+{
+    background: black;
+    color: white;
+}
+table{
+    color: black;
+}

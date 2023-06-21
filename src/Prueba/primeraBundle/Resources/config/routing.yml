@@ -1,0 +1,16 @@
+pruebaprimera_homepage:
+    path:     /primera
+    defaults: { _controller:PruebaprimeraBundle:Default:index }
+
+doAbono:
+    path:     /doAbono
+    defaults: { _controller:PruebaprimeraBundle:Default:doAbono }
+
+doRetiro:
+    path:     /doRetiro
+    defaults: { _controller:PruebaprimeraBundle:Default:doRetiro }
+
+getMovimientos:
+    path:     /getMovimientos
+    defaults: { _controller:PruebaprimeraBundle:Default:getMovimientos }
+

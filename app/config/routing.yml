@@ -1,0 +1,4 @@
+pruebaprimera:
+    resource: "@PruebaprimeraBundle/Resources/config/routing.yml"
+    prefix:   /
+
