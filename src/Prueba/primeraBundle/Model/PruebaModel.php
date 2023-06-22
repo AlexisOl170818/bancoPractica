@@ -43,7 +43,7 @@ class PruebaModel{
         $qry.='movimiento';
         $qry.='(nocuenta,importe,fecha,tipomovimiento) ';
         $qry.='values';
-        $qry.="('$nocuenta',$importe,current_timestamp,'Abono')";
+        $qry.="('$nocuenta',$importe,current_timestamp,'Abono') returning *";
 
         $result=$this->SQLModel->executeQuery($qry);
         return $result;
@@ -53,15 +53,12 @@ class PruebaModel{
     public function doRetiro($nocuenta,$importe)
     {
 
-        $saldo=$this->getSaldoClient(1);
-        if($saldo['data']['SaldoTotal']>$importe)
-        {
+
             $qry='INSERT INTO ';
             $qry.='movimiento';
             $qry.='(nocuenta,importe,fecha,tipomovimiento) ';
             $qry.='values';
-            $qry.="('$nocuenta',$importe,current_timestamp,'Retiro')";
-        }
+            $qry.="('$nocuenta',$importe,current_timestamp,'Retiro')returning *";
 
 
         $result=$this->SQLModel->executeQuery($qry);

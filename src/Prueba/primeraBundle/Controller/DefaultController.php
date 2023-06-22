@@ -4,6 +4,8 @@ namespace Prueba\primeraBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Prueba\primeraBundle\Model\PruebaModel;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
   
@@ -18,8 +20,7 @@ class DefaultController extends Controller
       $resultClientes=$this->PruebaModel->getClientes();
     //  $content["clientes"]=$resultClientes['data'];
 
-        $resultClientes=$this->PruebaModel->getSaldoClient(1);
-        $content["saldoTotal"]=$resultClientes['data'];
+
         $saldo['movements']=null;
 
 
@@ -58,25 +59,34 @@ class DefaultController extends Controller
         ]');
 
 
-        return $this->render('PruebaprimeraBundle:Default:index.html.twig', array('content' => $content,'saldo'=>$saldo));
+        return $this->render('PruebaprimeraBundle:Default:index.html.twig', array('saldo'=>$saldo));
     }
 
-    public function doAbonoAction()
+    public function doAbonoAction(Request $request)
     {
-        $resultClientes=$this->PruebaModel->doAbono(1,100);
-        return $resultClientes;
+        $post = $request->getContent();
+
+        $data=json_decode($post,true);
+        $resultClientes=$this->PruebaModel->doAbono($data['cuenta'],$data['deposito']);
+        return $this->jsonResponse($resultClientes);
 
     }
-    public function getMovimientosAction()
+    public function getMovimientosAction(Request $request)
     {
-        $resultClientes=$this->PruebaModel->getMovements(1);
 
+        $post = $request->getContent();
+        $cuenta=json_decode($post,true);
+
+        $resultClientes=$this->PruebaModel->getSaldoClient($cuenta['cuenta']);
+        $saldo["saldoTotal"]=$resultClientes['data'];
+        $resultClientes=$this->PruebaModel->getMovements($cuenta['cuenta']);
         $saldo["movements"]=($resultClientes['data']);
         return $this->jsonResponse($saldo);
 
     }
     protected function jsonResponse($data)
     {
+
         $response = new Response(json_encode($data));
         $response->headers->set('Content-Type', 'application/json');
 
@@ -84,10 +94,11 @@ class DefaultController extends Controller
     }
 
 
-    public function doRetiroAction()
+    public function doRetiroAction(Request $request)
     {
-        $resultClientes=$this->PruebaModel->doRetiro(1,100);
-        return $resultClientes;
-
+        $post = $request->getContent();
+        $data=json_decode($post,true);
+        $resultClientes=$this->PruebaModel->doRetiro($data['cuenta'],$data['retiro']);
+        return $this->jsonResponse($resultClientes);
     }
 }
