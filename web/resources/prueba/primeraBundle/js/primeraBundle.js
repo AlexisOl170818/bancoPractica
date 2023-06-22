@@ -1,9 +1,31 @@
 const btnDepositar = document.getElementById("depositar");
 const btnRetirar = document.getElementById("retirar");
 const btnCargar = document.getElementById("cargarInformacion");
+
 const tabla = $('#historyOfMoves').DataTable({
     "lengthMenu": [[10, 25, 50, 75, 100], [10, 25, 50, 75, 100]],
-    "iDisplayLength": 50
+    "iDisplayLength": 50,
+    "paging": true,
+    language: {
+        "decimal": "",
+        "emptyTable": "No hay información",
+        "info": "Mostrando _START_ a _END_ de _TOTAL_ Movimientos",
+        "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+        "infoFiltered": "(Filtrado de _MAX_ total Movimientos)",
+        "infoPostFix": "",
+        "thousands": ",",
+        "lengthMenu": "Mostrar _MENU_ movimientos",
+        "loadingRecords": "Cargando...",
+        "processing": "Procesando...",
+        "search": "Buscar:",
+        "zeroRecords": "Sin resultados encontrados",
+        "paginate": {
+            "first": "Primero",
+            "last": "Ultimo",
+            "next": "Siguiente",
+            "previous": "Anterior"
+        },
+    }
 });
 const saldoDisponible = document.getElementById("saldoDisponible");
 //importeRetiro,importeAbono
