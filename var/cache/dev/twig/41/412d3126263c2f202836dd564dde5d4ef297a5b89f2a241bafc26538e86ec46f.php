@@ -22,48 +22,56 @@ class __TwigTemplate_78c91b045db4c90eaa470e81d53763be0e9cfe41eeeeb34ed7177bed122
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3adf2871cb57545b9f5014ec519a333ab280eb959259e60c1ac0dcf34d11651f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3adf2871cb57545b9f5014ec519a333ab280eb959259e60c1ac0dcf34d11651f->enter($__internal_3adf2871cb57545b9f5014ec519a333ab280eb959259e60c1ac0dcf34d11651f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PruebaprimeraBundle:Default:index.html.twig"));
+        $__internal_e9c3bb5980da4eacbda5a5a8d4e7e0d4f77be7e5a22aa62ef2920e2826c0feef = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e9c3bb5980da4eacbda5a5a8d4e7e0d4f77be7e5a22aa62ef2920e2826c0feef->enter($__internal_e9c3bb5980da4eacbda5a5a8d4e7e0d4f77be7e5a22aa62ef2920e2826c0feef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PruebaprimeraBundle:Default:index.html.twig"));
 
-        $__internal_665e0c2fec044c044e2ffdabbc203751373434e8bf3f5e68beb3d998f290a085 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_665e0c2fec044c044e2ffdabbc203751373434e8bf3f5e68beb3d998f290a085->enter($__internal_665e0c2fec044c044e2ffdabbc203751373434e8bf3f5e68beb3d998f290a085_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PruebaprimeraBundle:Default:index.html.twig"));
+        $__internal_bfcd8515017035c8c96f1b06737ccf66bdfe371e9f45fc92f747eef4ad11cc67 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bfcd8515017035c8c96f1b06737ccf66bdfe371e9f45fc92f747eef4ad11cc67->enter($__internal_bfcd8515017035c8c96f1b06737ccf66bdfe371e9f45fc92f747eef4ad11cc67_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PruebaprimeraBundle:Default:index.html.twig"));
 
         // line 2
         $context["asset_path"] = "resources/prueba/primeraBundle/";
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_3adf2871cb57545b9f5014ec519a333ab280eb959259e60c1ac0dcf34d11651f->leave($__internal_3adf2871cb57545b9f5014ec519a333ab280eb959259e60c1ac0dcf34d11651f_prof);
+        $__internal_e9c3bb5980da4eacbda5a5a8d4e7e0d4f77be7e5a22aa62ef2920e2826c0feef->leave($__internal_e9c3bb5980da4eacbda5a5a8d4e7e0d4f77be7e5a22aa62ef2920e2826c0feef_prof);
 
         
-        $__internal_665e0c2fec044c044e2ffdabbc203751373434e8bf3f5e68beb3d998f290a085->leave($__internal_665e0c2fec044c044e2ffdabbc203751373434e8bf3f5e68beb3d998f290a085_prof);
+        $__internal_bfcd8515017035c8c96f1b06737ccf66bdfe371e9f45fc92f747eef4ad11cc67->leave($__internal_bfcd8515017035c8c96f1b06737ccf66bdfe371e9f45fc92f747eef4ad11cc67_prof);
 
     }
 
     // line 4
     public function block_content($context, array $blocks = array())
     {
-        $__internal_2b46efacb93779db4210a250f7ff49e15a6a9ef132ecd113238ea2ae5bef15e3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_2b46efacb93779db4210a250f7ff49e15a6a9ef132ecd113238ea2ae5bef15e3->enter($__internal_2b46efacb93779db4210a250f7ff49e15a6a9ef132ecd113238ea2ae5bef15e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_e657a4ae662034e5650589a3e5e46751eecf99eeeecd8f8175304a5707cbc081 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e657a4ae662034e5650589a3e5e46751eecf99eeeecd8f8175304a5707cbc081->enter($__internal_e657a4ae662034e5650589a3e5e46751eecf99eeeecd8f8175304a5707cbc081_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        $__internal_6596bc4ce4858c57b7b7d2c779157f12168a1c0c5928c2bd6e7531cd95a84ab1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6596bc4ce4858c57b7b7d2c779157f12168a1c0c5928c2bd6e7531cd95a84ab1->enter($__internal_6596bc4ce4858c57b7b7d2c779157f12168a1c0c5928c2bd6e7531cd95a84ab1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_31cd9d76ac81a9a977fe472a797769e10d87510046ddc93ff9d0abefbdec0ffe = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_31cd9d76ac81a9a977fe472a797769e10d87510046ddc93ff9d0abefbdec0ffe->enter($__internal_31cd9d76ac81a9a977fe472a797769e10d87510046ddc93ff9d0abefbdec0ffe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 5
         echo "<div class=\"container\">
     <div class=\"card \">
-        <div class=\"card-content indigo lighten-4\">
+        <div class=\"card-content indigo lighten-4 \">
             <h1 class=\"center\">OPCIONES</h1>
             <div class=\"row\">
-                <form class=\"col s12\">
+                <form class=\"col s12\" id=\"#form-cuenta\">
                     <div class=\"row\">
                         <div class=\"input-field col s6\">
-                            <input  id=\"ncuenta\" type=\"text\" class=\"validate\">
+                            <input  id=\"ncuenta\" type=\"number\" class=\"validate\">
                             <label for=\"ncuenta \" class=\"white-text\">Ingresa el numero de cuenta</label>
-                            <a id=\"cargarInformacion\"class=\"waves-effect waves-light btn\"><i class=\"material-icons left\">refresh</i>Cargar informacion</a>
+
+                            <span id=\"errorCuenta\" class=\"error-message\"></span>
+
                         </div>
 
                     </div>
+                    <div class=\"row\">
+                        <div class=\"col\">
+                            <a id=\"cargarInformacion\"class=\"waves-effect waves-light btn rounded-form\"><i class=\"material-icons left\">refresh</i>Cargar informacion</a>
+                        </div>
+                    </div>
+
 
                 </form>
             </div>
@@ -98,34 +106,47 @@ class __TwigTemplate_78c91b045db4c90eaa470e81d53763be0e9cfe41eeeeb34ed7177bed122
             </div>
             <div id=\"retiro\" class=\"background-white\"><h4>Retira</h4>
                 <div class=\"row\">
-                    <form class=\"col s12\">
+                    <form class=\"col s12\" id=\"form-retiro\">
 
                             <div class=\"input-field col  s12\">
                                 <i class=\"material-icons prefix\">attach_money
                                 </i>
-                                <input id=\"importeRetiro\" type=\"number\" class=\"validate\">
+                                <input id=\"importeRetiro\" type=\"number\" class=\"validate\" step=\"any\">
                                 <label for=\"importeRetiro\">Importe</label>
-                            </div>
-                        <a id=\"retirar\"class=\"waves-effect waves-light btn\"><i class=\"material-icons left\">call_made</i>Retirar</a>
 
+                            </div>
+
+                        <span id=\"errorRetiro\" class=\"error-message\"></span>
                     </form>
+
+                </div>
+                <div class=\"row\">
+                    <div class=\"col\">
+                        <a id=\"retirar\"class=\"waves-effect waves-light btn \"><i class=\"material-icons left\">call_made</i>Retirar</a>
+                    </div>
                 </div>
 
             </div>
             <div id=\"deposito\">
                 <div id=\"retiro\" class=\"background-white\"><h4>Depositar</h4>
                     <div class=\"row\">
-                        <form class=\"col s12\" id=\"\">
+                        <form class=\"col s12\" id=\"form-abono\">
 
                             <div class=\"input-field col  s12\">
                                 <i class=\"material-icons prefix\">attach_money
                                 </i>
-                                <input id=\"importeAbono\" type=\"number\" class=\"validate\">
+                                <input id=\"importeAbono\" type=\"number\" class=\"validate\" step=\"any\">
                                 <label for=\"importeAbono\">Importe</label>
+
                             </div>
+                            <span id=\"errorAbono\" class=\"error-message\"></span>
+                        </form>
+                    </div>
+                    <div class=\"row\">
+                        <div class=\"col\">
                             <a id=\"depositar\" class=\"waves-effect waves-light btn\"><i class=\"material-icons left\">call_received</i>DEPOSITAR</a>
 
-                        </form>
+                        </div>
                     </div>
 
                 </div>
@@ -135,49 +156,49 @@ class __TwigTemplate_78c91b045db4c90eaa470e81d53763be0e9cfe41eeeeb34ed7177bed122
 
 </div>";
         
-        $__internal_6596bc4ce4858c57b7b7d2c779157f12168a1c0c5928c2bd6e7531cd95a84ab1->leave($__internal_6596bc4ce4858c57b7b7d2c779157f12168a1c0c5928c2bd6e7531cd95a84ab1_prof);
+        $__internal_31cd9d76ac81a9a977fe472a797769e10d87510046ddc93ff9d0abefbdec0ffe->leave($__internal_31cd9d76ac81a9a977fe472a797769e10d87510046ddc93ff9d0abefbdec0ffe_prof);
 
         
-        $__internal_2b46efacb93779db4210a250f7ff49e15a6a9ef132ecd113238ea2ae5bef15e3->leave($__internal_2b46efacb93779db4210a250f7ff49e15a6a9ef132ecd113238ea2ae5bef15e3_prof);
+        $__internal_e657a4ae662034e5650589a3e5e46751eecf99eeeecd8f8175304a5707cbc081->leave($__internal_e657a4ae662034e5650589a3e5e46751eecf99eeeecd8f8175304a5707cbc081_prof);
 
     }
 
-    // line 92
+    // line 113
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_ba3eca198b0f35622b247923f583e123fa1db89fd8ef9569f0731ea0fc294529 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ba3eca198b0f35622b247923f583e123fa1db89fd8ef9569f0731ea0fc294529->enter($__internal_ba3eca198b0f35622b247923f583e123fa1db89fd8ef9569f0731ea0fc294529_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_d66f6f2c73e476151f6091c27caed4ca84ba02788f0ab3d0d6891e64c2742294 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d66f6f2c73e476151f6091c27caed4ca84ba02788f0ab3d0d6891e64c2742294->enter($__internal_d66f6f2c73e476151f6091c27caed4ca84ba02788f0ab3d0d6891e64c2742294_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_7f5b2d3b4fa9146ede7b7bb4e66e66834621db4a06b5131dc0583c4bc248a3b2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7f5b2d3b4fa9146ede7b7bb4e66e66834621db4a06b5131dc0583c4bc248a3b2->enter($__internal_7f5b2d3b4fa9146ede7b7bb4e66e66834621db4a06b5131dc0583c4bc248a3b2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_68de6dfe981fbbaaf0e52b08e5d5e5d8a3515ef0d074f108bc864111a6e50a68 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_68de6dfe981fbbaaf0e52b08e5d5e5d8a3515ef0d074f108bc864111a6e50a68->enter($__internal_68de6dfe981fbbaaf0e52b08e5d5e5d8a3515ef0d074f108bc864111a6e50a68_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 93
+        // line 114
         $this->displayParentBlock("javascripts", $context, $blocks);
         echo "
     <script type=\"text/javascript\" src=\"";
-        // line 94
+        // line 115
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl((($context["asset_path"] ?? $this->getContext($context, "asset_path")) . "js/primeraBundle.js")), "html", null, true);
         echo "\"></script>
     <script>
         var url_getMovimientos= \"";
-        // line 96
+        // line 117
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("getMovimientos");
         echo "\"
         var url_doAbono= \"";
-        // line 97
+        // line 118
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("doAbono");
         echo "\"
         var url_doRetiro= \"";
-        // line 98
+        // line 119
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("doRetiro");
         echo "\"
 
     </script>";
         
-        $__internal_7f5b2d3b4fa9146ede7b7bb4e66e66834621db4a06b5131dc0583c4bc248a3b2->leave($__internal_7f5b2d3b4fa9146ede7b7bb4e66e66834621db4a06b5131dc0583c4bc248a3b2_prof);
+        $__internal_68de6dfe981fbbaaf0e52b08e5d5e5d8a3515ef0d074f108bc864111a6e50a68->leave($__internal_68de6dfe981fbbaaf0e52b08e5d5e5d8a3515ef0d074f108bc864111a6e50a68_prof);
 
         
-        $__internal_ba3eca198b0f35622b247923f583e123fa1db89fd8ef9569f0731ea0fc294529->leave($__internal_ba3eca198b0f35622b247923f583e123fa1db89fd8ef9569f0731ea0fc294529_prof);
+        $__internal_d66f6f2c73e476151f6091c27caed4ca84ba02788f0ab3d0d6891e64c2742294->leave($__internal_d66f6f2c73e476151f6091c27caed4ca84ba02788f0ab3d0d6891e64c2742294_prof);
 
     }
 
@@ -193,7 +214,7 @@ class __TwigTemplate_78c91b045db4c90eaa470e81d53763be0e9cfe41eeeeb34ed7177bed122
 
     public function getDebugInfo()
     {
-        return array (  172 => 98,  168 => 97,  164 => 96,  159 => 94,  155 => 93,  146 => 92,  53 => 5,  44 => 4,  34 => 1,  32 => 2,  11 => 1,);
+        return array (  193 => 119,  189 => 118,  185 => 117,  180 => 115,  176 => 114,  167 => 113,  53 => 5,  44 => 4,  34 => 1,  32 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -212,18 +233,26 @@ class __TwigTemplate_78c91b045db4c90eaa470e81d53763be0e9cfe41eeeeb34ed7177bed122
 {% block content%}
 <div class=\"container\">
     <div class=\"card \">
-        <div class=\"card-content indigo lighten-4\">
+        <div class=\"card-content indigo lighten-4 \">
             <h1 class=\"center\">OPCIONES</h1>
             <div class=\"row\">
-                <form class=\"col s12\">
+                <form class=\"col s12\" id=\"#form-cuenta\">
                     <div class=\"row\">
                         <div class=\"input-field col s6\">
-                            <input  id=\"ncuenta\" type=\"text\" class=\"validate\">
+                            <input  id=\"ncuenta\" type=\"number\" class=\"validate\">
                             <label for=\"ncuenta \" class=\"white-text\">Ingresa el numero de cuenta</label>
-                            <a id=\"cargarInformacion\"class=\"waves-effect waves-light btn\"><i class=\"material-icons left\">refresh</i>Cargar informacion</a>
+
+                            <span id=\"errorCuenta\" class=\"error-message\"></span>
+
                         </div>
 
                     </div>
+                    <div class=\"row\">
+                        <div class=\"col\">
+                            <a id=\"cargarInformacion\"class=\"waves-effect waves-light btn rounded-form\"><i class=\"material-icons left\">refresh</i>Cargar informacion</a>
+                        </div>
+                    </div>
+
 
                 </form>
             </div>
@@ -258,34 +287,47 @@ class __TwigTemplate_78c91b045db4c90eaa470e81d53763be0e9cfe41eeeeb34ed7177bed122
             </div>
             <div id=\"retiro\" class=\"background-white\"><h4>Retira</h4>
                 <div class=\"row\">
-                    <form class=\"col s12\">
+                    <form class=\"col s12\" id=\"form-retiro\">
 
                             <div class=\"input-field col  s12\">
                                 <i class=\"material-icons prefix\">attach_money
                                 </i>
-                                <input id=\"importeRetiro\" type=\"number\" class=\"validate\">
+                                <input id=\"importeRetiro\" type=\"number\" class=\"validate\" step=\"any\">
                                 <label for=\"importeRetiro\">Importe</label>
-                            </div>
-                        <a id=\"retirar\"class=\"waves-effect waves-light btn\"><i class=\"material-icons left\">call_made</i>Retirar</a>
 
+                            </div>
+
+                        <span id=\"errorRetiro\" class=\"error-message\"></span>
                     </form>
+
+                </div>
+                <div class=\"row\">
+                    <div class=\"col\">
+                        <a id=\"retirar\"class=\"waves-effect waves-light btn \"><i class=\"material-icons left\">call_made</i>Retirar</a>
+                    </div>
                 </div>
 
             </div>
             <div id=\"deposito\">
                 <div id=\"retiro\" class=\"background-white\"><h4>Depositar</h4>
                     <div class=\"row\">
-                        <form class=\"col s12\" id=\"\">
+                        <form class=\"col s12\" id=\"form-abono\">
 
                             <div class=\"input-field col  s12\">
                                 <i class=\"material-icons prefix\">attach_money
                                 </i>
-                                <input id=\"importeAbono\" type=\"number\" class=\"validate\">
+                                <input id=\"importeAbono\" type=\"number\" class=\"validate\" step=\"any\">
                                 <label for=\"importeAbono\">Importe</label>
+
                             </div>
+                            <span id=\"errorAbono\" class=\"error-message\"></span>
+                        </form>
+                    </div>
+                    <div class=\"row\">
+                        <div class=\"col\">
                             <a id=\"depositar\" class=\"waves-effect waves-light btn\"><i class=\"material-icons left\">call_received</i>DEPOSITAR</a>
 
-                        </form>
+                        </div>
                     </div>
 
                 </div>

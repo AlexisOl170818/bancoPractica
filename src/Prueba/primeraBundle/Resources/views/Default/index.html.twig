@@ -4,18 +4,26 @@
 {% block content%}
 <div class="container">
     <div class="card ">
-        <div class="card-content indigo lighten-4">
+        <div class="card-content indigo lighten-4 ">
             <h1 class="center">OPCIONES</h1>
             <div class="row">
-                <form class="col s12">
+                <form class="col s12" id="#form-cuenta">
                     <div class="row">
                         <div class="input-field col s6">
-                            <input  id="ncuenta" type="text" class="validate">
+                            <input  id="ncuenta" type="number" class="validate">
                             <label for="ncuenta " class="white-text">Ingresa el numero de cuenta</label>
-                            <a id="cargarInformacion"class="waves-effect waves-light btn"><i class="material-icons left">refresh</i>Cargar informacion</a>
+
+                            <span id="errorCuenta" class="error-message"></span>
+
                         </div>
 
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <a id="cargarInformacion"class="waves-effect waves-light btn rounded-form"><i class="material-icons left">refresh</i>Cargar informacion</a>
+                        </div>
+                    </div>
+
 
                 </form>
             </div>
@@ -50,34 +58,47 @@
             </div>
             <div id="retiro" class="background-white"><h4>Retira</h4>
                 <div class="row">
-                    <form class="col s12">
+                    <form class="col s12" id="form-retiro">
 
                             <div class="input-field col  s12">
                                 <i class="material-icons prefix">attach_money
                                 </i>
-                                <input id="importeRetiro" type="number" class="validate">
+                                <input id="importeRetiro" type="number" class="validate" step="any">
                                 <label for="importeRetiro">Importe</label>
-                            </div>
-                        <a id="retirar"class="waves-effect waves-light btn"><i class="material-icons left">call_made</i>Retirar</a>
 
+                            </div>
+
+                        <span id="errorRetiro" class="error-message"></span>
                     </form>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a id="retirar"class="waves-effect waves-light btn "><i class="material-icons left">call_made</i>Retirar</a>
+                    </div>
                 </div>
 
             </div>
             <div id="deposito">
                 <div id="retiro" class="background-white"><h4>Depositar</h4>
                     <div class="row">
-                        <form class="col s12" id="">
+                        <form class="col s12" id="form-abono">
 
                             <div class="input-field col  s12">
                                 <i class="material-icons prefix">attach_money
                                 </i>
-                                <input id="importeAbono" type="number" class="validate">
+                                <input id="importeAbono" type="number" class="validate" step="any">
                                 <label for="importeAbono">Importe</label>
+
                             </div>
+                            <span id="errorAbono" class="error-message"></span>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="col">
                             <a id="depositar" class="waves-effect waves-light btn"><i class="material-icons left">call_received</i>DEPOSITAR</a>
 
-                        </form>
+                        </div>
                     </div>
 
                 </div>

@@ -24,3 +24,25 @@
 table{
     color: black;
 }
+.rounded-form
+{
+    border-radius: 100px;
+}
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+.error-message {
+    display: block;
+    color: #e53935;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
